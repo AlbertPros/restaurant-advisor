@@ -1,0 +1,33 @@
+extends layout
+
+include mixins/_reviewForm
+include mixins/_review
+
+block content
+    .container
+            .mb-3.card
+                img.card-img-top.restaurantphoto(src=`/uploads/${restaurant.photo || 'nophoto.png'}`)
+                .card-body
+                    h5.fs-0 #{restaurant.name}
+                    p.mb-0= restaurant.address
+            .no-gutters.row
+                .pr-lg-2.col-lg-12
+                    .card
+                        .card-body
+                            p=restaurant.description
+                            if restaurant.tags && restaurant.tags.length
+                                each tag in restaurant.tags
+                                    a.badge.bg-light.textprimary(href=`/tags/${tag}`) ##{tag}
+                if user
+                    .no-gutters.row
+                        .pt-3.col-lg-12
+                            .card
+                                .card-body
+                                    +reviewForm(restaurant)
+                if reviews && reviews.length
+                    each review in reviews
+                        .no-gutters.row
+                            .pt-3.col-lg-12
+                                .card
+                                    .card-body
+                                        +review(review)

@@ -1,0 +1,58 @@
+doctype html
+html
+  head
+    title #{title}
+    link(rel='stylesheet', href='/css/style.css')
+    link(rel='stylesheet', href='/css/bootstrap.min.css')
+    link(rel='icon', href='data:;base64,iVBORw0KGgo=')
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    <script src="https://kit.fontawesome.com/7bb6e85bbc.js" crossorigin="anonymous"></script>
+  body
+    block header
+      nav.navbar.navbar-expand-sm.bg-body-tertiary(data-bs-theme="dark")
+        div.container-fluid
+          a.navbar-brand(href='/')
+            img(src="/icons/logo.svg" alt="" width="140" height="40" title="Bootstrap")
+          button.navbar-toggler(type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation")
+            span.navbar-toggler-icon
+          .collapse.navbar-collapse#navbarNav
+            ul.navbar-nav
+              each item in menu
+                li.nav-item
+                  a.nav-link(href=item.slug)
+                    span #{item.title}
+            .form-inline.search
+              input.form-control.mr-sm-2(type="text" placeholder="Coffee, beer..." name="search")
+              .search__results
+            ul.navbar-nav.ms-auto
+                if user
+                    li.nav-item
+                    a.nav-link(href='/account')
+                        i.fa-solid.fa-circle-user(style='padding-right:5px')
+                        span #{user.name}
+                    li.nav-item
+                    a.nav-link(href='/logout')
+                        i.fa-solid.fa-arrow-right-from-bracket(style='padding-right:5px')
+                        | Logout
+                else
+                    li.nav-item
+                    a.nav-link(href='/register')
+                        i.fa-solid.fa-person-digging(style='padding-right:5px')
+                        |Register
+                    li.nav-item
+                    a.nav-link(href='/login')
+                        i.fa-solid.fa-arrow-right-to-bracket(style='padding-right:5px')
+                        | Login
+    block messages
+      .flashes
+        if flashes && flashes.length
+          each flash in flashes
+            .alert(class=`${flash.type}`)
+              span= flash.message
+              span.closebtn(onClick="this.parentElement.remove()") &times;
+    .content
+      block content
+
+    block scripts
+      script(src="/dist/bootstrap.bundle.min.js")
+      script(src="/dist/app.bundle.js")

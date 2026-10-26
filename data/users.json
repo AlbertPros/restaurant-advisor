@@ -1,0 +1,22 @@
+[
+    {
+        "_id":"6a2c8aea9c5a33487d8d75ee",
+		"name": "alex",
+		"email": "alex@alex.com",
+		"passwordHash": "$2b$10$D77176rXZ4Td.XSwENaQXuQ.mcwHoHbfORcmhNtlF1nb3gmPHBaaq",
+		"createdAt": "2026-06-12T22:40:42.275Z",
+		"updatedAt": "2026-06-14T13:32:46.599Z",
+		"passwordResetExpiresAt": null,
+		"passwordResetTokenHash": null
+    },
+	{
+        "_id":"6a303e54ea43475108556bc7",
+		"name": "Victor",
+		"email": "victor@victor.com",
+		"passwordHash": "$2b$10$0NKmVmrstGRl3jeqK5QrbOwYNYpuiohDMM.1pT0ksv.3Jn4f4s.M6",
+		"createdAt": "2026-06-15T18:03:00.901Z",
+		"updatedAt": "2026-06-15T18:03:00.901Z",
+		"passwordResetExpiresAt": null,
+		"passwordResetTokenHash": null
+    }
+]

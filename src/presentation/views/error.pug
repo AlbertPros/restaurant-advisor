@@ -1,0 +1,9 @@
+extends layout
+
+block content
+    .container
+        h2 Error #{status}
+        p #{message}
+
+        if stack
+            pre.error= stack

@@ -1,0 +1,41 @@
+{
+  "name": "restaurant-advisor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./server.js",
+    "watch": "nodemon ./server.js --ignore src/presentation/public/",
+    "webpack": "webpack -w --mode production",
+    "dev": "concurrently \"npm run watch\" \"npm run webpack\"",
+    "loadsample": "node ./data/load-sample-data.js",
+    "deletesample": "node ./data/load-sample-data.js --delete"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "connect-mongo": "^6.0.0",
+    "dompurify": "^3.4.16",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "express-session": "^1.19.0",
+    "express-validator": "^7.3.2",
+    "jimp": "^1.6.1",
+    "moment": "^2.31.0",
+    "mongoose": "^9.10.1",
+    "multer": "^2.4.0",
+    "nodemailer": "^10.2.1",
+    "passport": "^0.7.0",
+    "passport-local": "^1.0.0",
+    "pug": "^3.0.4",
+    "uuid": "^14.0.2"
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.5",
+    "nodemon": "^3.1.14",
+    "webpack-cli": "^7.2.3"
+  }
+}

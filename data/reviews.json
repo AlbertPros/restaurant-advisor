@@ -1,0 +1,50 @@
+[
+    {
+        "_id":"6a3044245f3241717cadbd60",
+        "author":"6a303e54ea43475108556bc7",
+        "restaurant":"6a303f5cea43475108556bcb",
+        "text":"I tried this place last week and it was incredible! Amazing selection of local and imported brews and the food is to die for! ",
+        "rating":5,
+        "createdAt":"2026-06-15T18:27:48.885Z"
+    },
+    {
+        "_id":"6a3044475f3241717cadbd61",
+        "author":"6a303e54ea43475108556bc7",
+        "restaurant":"6a303edfea43475108556bc8",
+        "text":"hipsters everywhere",
+        "rating":1,
+        "createdAt":"2026-06-15T18:28:23.502Z"
+    },
+    {
+        "_id":"6a3044615f3241717cadbd62",
+        "author":"6a303e54ea43475108556bc7",
+        "restaurant":"6a303fd3ea43475108556bce",
+        "text":"Always a great spot to grab a coffee with a friend.",
+        "rating":5,
+        "createdAt":"2026-06-15T18:28:49.838Z"
+    },
+    {
+        "_id":"6a3044895f3241717cadbd63",
+        "author":"6a2c8aea9c5a33487d8d75ee",
+        "restaurant":"6a303fd3ea43475108556bce",
+        "text":"Tried this place with my wife last week and it was incredible.",
+        "rating":4,
+        "createdAt":"2026-06-15T18:29:29.023Z"
+    },
+    {
+        "_id":"6a3044ab5f3241717cadbd64",
+        "author":"6a2c8aea9c5a33487d8d75ee",
+        "restaurant":"6a303f21ea43475108556bca",
+        "text":"If you need a great place with bangin' food that is open late, look no further than work.",
+        "rating":5,
+        "createdAt":"2026-06-15T18:30:03.378Z"
+    },
+    {
+        "_id":"6a3044c25f3241717cadbd65",
+        "author":"6a2c8aea9c5a33487d8d75ee",
+        "restaurant":"6a303edfea43475108556bc8",
+        "text":"Pretty good soups.",
+        "rating":3,
+        "createdAt":"2026-06-15T18:30:26.633Z"
+    }
+]

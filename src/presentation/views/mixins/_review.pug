@@ -1,0 +1,7 @@
+mixin review(review)
+    span.badge.bg-secondary=`Rated ${review.rating} out of 5 stars`
+    span.ms-3= utils.moment(review.createdAt).fromNow()
+    div.pt-3
+        p.mb-0
+            strong=`${review.authorName} says:`
+        p.mb-0= review.text

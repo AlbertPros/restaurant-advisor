@@ -1,0 +1,10 @@
+mixin restaurantCard(restaurant = {})
+    .restaurant
+        .card.h-100
+            img.card-img-top(src=`/uploads/${restaurant.photo ||'nophoto.png'}`)
+            .card-body.d-flex.flex-column
+                h5.card-title
+                    a(href=`/restaurants/${restaurant.id}` style="color:black") #{restaurant.name}
+                p.card-text= restaurant.description.split(' ').slice(0, 15).join(' ')
+            if user && restaurant.ownerId === user.id
+                a.mt-auto.btn.btn-primary(href=`/restaurants/${restaurant.id}/edit`) Edit

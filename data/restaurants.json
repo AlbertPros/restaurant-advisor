@@ -1,0 +1,62 @@
+[
+	{
+	  "_id": "6a303edfea43475108556bc8",
+	  "name": "Olive Oil",
+	  "description": "Friendly atmosphere. Great selection of local brews.",
+	  "address": "Hamilton, ON, Canada",
+	  "tags": ["Wifi","Open Late","Vegan"],
+	  "photo": "1.jpg",
+	  "owner": "6a2c8aea9c5a33487d8d75ee",
+	  "createdAt": "2026-06-15T18:05:19.590Z"
+	},
+	{
+	  "_id": "6a303efeea43475108556bc9",
+	  "name": "Sour on King",
+	  "description": "Amazing selection of everything sour, fermented and tart.",
+	  "address": "King William Street, Hamilton, ON, Canada",
+	  "tags": ["Vegan"],
+	  "photo": "2.jpg",
+	  "owner": "6a2c8aea9c5a33487d8d75ee",
+	  "createdAt": "2026-06-15T18:05:50.314Z"
+	},
+	{
+	  "_id": "6a303f21ea43475108556bca",
+	  "name": "The French",
+	  "description": "High end french restaurant on the hippest street in town.",
+	  "address": "The French, King William Street, Hamilton, ON, Canada",
+	  "tags": ["Open Late"],
+	  "photo": "3.jpg",
+	  "owner": "6a2c8aea9c5a33487d8d75ee",
+	  "createdAt": "2026-06-15T18:06:25.828Z"
+	},
+	{
+	  "_id": "6a303f91ea43475108556bcc",
+	  "name": "Mezcal Tacos & Tequila",
+	  "description": "Familiar Mexican fare with a gourmet twist & housemade margaritas, plus a lively late-night scene.",
+	  "address": "150 James St S, Hamilton, ON L8P 3A2, Canada",
+	  "tags": ["Open Late","Family Friendly"],
+	  "photo": "6.jpg",
+	  "owner": "6a303e54ea43475108556bc7",
+	  "createdAt": "2026-06-15T18:08:17.908Z"
+	},
+	{
+	  "_id": "6a303fb0ea43475108556bcd",
+	  "name": "Two Black Sheep",
+	  "description": "Intimate, rustic-chic bar providing oysters, charcuterie, cheese plates, wine & craft cocktails.",
+	  "address": "163 John St S, Hamilton, ON L8N 2C3, Canada",
+	  "tags": ["Wifi","Open Late"],
+	  "photo": "7.jpg",
+	  "owner": "6a303e54ea43475108556bc7",
+	  "createdAt": "2026-06-15T18:08:48.735Z"
+	},
+	{
+	  "_id": "6a303fd3ea43475108556bce",
+	  "name": "Donut Monster",
+	  "description": "Small-batch, from-scratch donuts available at select coffee shops on Thursdays, Fridays, and Saturdays.",
+	  "address": "The Kitchen Collective, King Street East, Hamilton, ON, Canada",
+	  "tags": ["Vegan"],
+	  "photo": "5.jpg",
+	  "owner": "6a303e54ea43475108556bc7",
+	  "createdAt": "2026-06-15T18:09:23.844Z"
+	}
+]
